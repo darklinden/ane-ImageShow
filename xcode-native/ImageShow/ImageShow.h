@@ -34,7 +34,7 @@
  * ImageShow
  *
  * Created by darklinden on 14-9-18.
- * Copyright (c) 2014年 __MyCompanyName__. All rights reserved.
+ * Copyright (c) 2014年 darklinden. All rights reserved.
 */
 
 #import <Foundation/Foundation.h>
@@ -78,9 +78,6 @@ void ContextFinalizer(FREContext ctx);
 
 //isSupported return yes
 ANE_FUNCTION(isSupported);
-
-//isSum return a + b
-ANE_FUNCTION(isSum);
 
 //isShow show label
 ANE_FUNCTION(isShow);

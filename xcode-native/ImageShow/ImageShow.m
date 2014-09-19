@@ -35,13 +35,13 @@
  * ImageShow
  *
  * Created by darklinden on 14-9-18.
- * Copyright (c) 2014年 __MyCompanyName__. All rights reserved.
+ * Copyright (c) 2014年 darklinden. All rights reserved.
  */
 
 #import "ImageShow.h"
 #import <UIKit/UIKit.h>
-#import "LargeImageView/LargeImageView.h"
-#import "LargeImageView/UIImage+largeImage.h"
+#import "UIImage+largeImage.h"
+#import "CoverImagerView.h"
 
 /* ImageShowExtInitializer()
  * The extension initializer is called the first time the ActionScript side of the extension
@@ -86,11 +86,10 @@ void ContextInitializer(void* extData, const uint8_t* ctxType, FREContext ctx, u
     static FRENamedFunction func[] = 
     {
         MAP_FUNCTION(isSupported, NULL),
-        MAP_FUNCTION(isSum, NULL),
         MAP_FUNCTION(isShow, NULL)
     };
     
-    *numFunctionsToTest = 3;//sizeof(func) / sizeof(FRENamedFunction);
+    *numFunctionsToTest = 2;//sizeof(func) / sizeof(FRENamedFunction);
     *functionsToSet = func;
     
     NSLog(@"Exiting ContextInitializer()");
@@ -136,29 +135,6 @@ ANE_FUNCTION(isSupported)
 	return fo;
 }
 
-ANE_FUNCTION(isSum)
-{
-    // argc ... argument count, uint
-    // argv ... argument values, Array
-    
-    // retrieve the first argument and write it to a variable
-    double number1;
-    FREGetObjectAsDouble(argv[0], &number1);
-    
-    // retrieve the second argument and write it to a variable
-    double number2;
-    FREGetObjectAsDouble(argv[1], &number2);
-    
-    // add first and second number together
-    double sum = number1 + number2;
-    
-    // write computed sum to a FREObject variable, which will be returned back to AS3
-    FREObject sumToReturn = nil;
-    FRENewObjectFromDouble(sum, &sumToReturn);
-    
-    return sumToReturn;
-}
-
 ANE_FUNCTION(isShow)
 {
     NSLog(@"Entering isShow()");
@@ -169,15 +145,25 @@ ANE_FUNCTION(isShow)
     
     NSString *path = [NSString stringWithUTF8String:(char*)string1];
     
+    double numberx;
+    FREGetObjectAsDouble(argv[1], &numberx);
+    
+    double numbery;
+    FREGetObjectAsDouble(argv[2], &numbery);
+    
+    double numberw;
+    FREGetObjectAsDouble(argv[3], &numberw);
+    
+    double numberh;
+    FREGetObjectAsDouble(argv[4], &numberh);
+    
+    CGRect rect = CGRectMake(numberx, numbery, numberw, numberh);
+    
     NSLog(@"path: %@", path);
     
-    UIView *view = [[[[[UIApplication sharedApplication] delegate] window] rootViewController] view];
+    UIImage *img = [UIImage imageWithContentsOfFile:path];
     
-    LargeImageView *img = [[LargeImageView alloc] initWithFrame:view.bounds];
-    img.backgroundColor = [UIColor colorWithWhite:0 alpha:0.6];
-    img.imgPath = path;
-    [view addSubview:img];
-    [img release];
+    [CoverImagerView showImage:img fromRect:rect];
     
 //    UIImageView *img = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 320, 320)];
 //    img.backgroundColor = [UIColor whiteColor];

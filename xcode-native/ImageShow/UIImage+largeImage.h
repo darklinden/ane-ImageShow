@@ -2,8 +2,8 @@
 //  UIImage+largeImage.h
 //  DemoForLargeImage
 //
-//  Created by DarkLinden on 12/12/12.
-//  Copyright (c) 2012 comcsoft. All rights reserved.
+//  Created by darkLinden on 12/12/12.
+//  Copyright (c) 2012 darkLinden. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>

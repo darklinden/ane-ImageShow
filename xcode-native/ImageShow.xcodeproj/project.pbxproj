@@ -23,10 +23,10 @@
 		1C16CF5819CABBAA00DEB229 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C16CF5719CABBAA00DEB229 /* AVFoundation.framework */; };
 		1C16CF5A19CABBAA00DEB229 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C16CF5919CABBAA00DEB229 /* Security.framework */; };
 		1C16CF6A19CABBAA00DEB229 /* ImageShow.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C16CF6919CABBAA00DEB229 /* ImageShow.m */; };
-		1CFCD48219CBF43E0017DAB3 /* LargeImageView.h in Headers */ = {isa = PBXBuildFile; fileRef = 1CFCD47E19CBF43E0017DAB3 /* LargeImageView.h */; };
-		1CFCD48319CBF43E0017DAB3 /* LargeImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CFCD47F19CBF43E0017DAB3 /* LargeImageView.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
-		1CFCD48419CBF43E0017DAB3 /* UIImage+largeImage.h in Headers */ = {isa = PBXBuildFile; fileRef = 1CFCD48019CBF43E0017DAB3 /* UIImage+largeImage.h */; };
-		1CFCD48519CBF43E0017DAB3 /* UIImage+largeImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CFCD48119CBF43E0017DAB3 /* UIImage+largeImage.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		1CFCD48A19CC06830017DAB3 /* CoverImagerView.h in Headers */ = {isa = PBXBuildFile; fileRef = 1CFCD48619CC06830017DAB3 /* CoverImagerView.h */; };
+		1CFCD48B19CC06830017DAB3 /* CoverImagerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CFCD48719CC06830017DAB3 /* CoverImagerView.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		1CFCD48C19CC06830017DAB3 /* UIImage+largeImage.h in Headers */ = {isa = PBXBuildFile; fileRef = 1CFCD48819CC06830017DAB3 /* UIImage+largeImage.h */; };
+		1CFCD48D19CC06830017DAB3 /* UIImage+largeImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CFCD48919CC06830017DAB3 /* UIImage+largeImage.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,13 +36,6 @@
 			proxyType = 1;
 			remoteGlobalIDString = 1C16CF3919CABBAA00DEB229;
 			remoteInfo = ImageShow;
-		};
-		1C16CF6319CABBAA00DEB229 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 1C16CF3219CABBAA00DEB229 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 1C16CF5C19CABBAA00DEB229;
-			remoteInfo = ImageShow.ane;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -64,7 +57,6 @@
 		1C16CF5719CABBAA00DEB229 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		1C16CF5919CABBAA00DEB229 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		1C16CF5D19CABBAA00DEB229 /* ImageShow.ane */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = ImageShow.ane; sourceTree = BUILT_PRODUCTS_DIR; };
-		1C16CF6019CABBAA00DEB229 /* DebugImageShowAIRApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DebugImageShowAIRApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1C16CF6719CABBAA00DEB229 /* ImageShow-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ImageShow-Prefix.pch"; sourceTree = "<group>"; };
 		1C16CF6819CABBAA00DEB229 /* ImageShow.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ImageShow.h; sourceTree = "<group>"; };
 		1C16CF6919CABBAA00DEB229 /* ImageShow.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ImageShow.m; sourceTree = "<group>"; };
@@ -72,10 +64,10 @@
 		1C16CF6C19CABBAA00DEB229 /* platformoptions.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = platformoptions.xml; sourceTree = "<group>"; };
 		1C16CF6D19CABBAA00DEB229 /* generateANE.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = generateANE.sh; sourceTree = "<group>"; };
 		1C16CF6E19CABBAA00DEB229 /* debugIPA.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = debugIPA.sh; sourceTree = "<group>"; };
-		1CFCD47E19CBF43E0017DAB3 /* LargeImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LargeImageView.h; sourceTree = "<group>"; };
-		1CFCD47F19CBF43E0017DAB3 /* LargeImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LargeImageView.m; sourceTree = "<group>"; };
-		1CFCD48019CBF43E0017DAB3 /* UIImage+largeImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+largeImage.h"; sourceTree = "<group>"; };
-		1CFCD48119CBF43E0017DAB3 /* UIImage+largeImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+largeImage.m"; sourceTree = "<group>"; };
+		1CFCD48619CC06830017DAB3 /* CoverImagerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CoverImagerView.h; path = ImageShow/CoverImagerView.h; sourceTree = "<group>"; };
+		1CFCD48719CC06830017DAB3 /* CoverImagerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CoverImagerView.m; path = ImageShow/CoverImagerView.m; sourceTree = "<group>"; };
+		1CFCD48819CC06830017DAB3 /* UIImage+largeImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIImage+largeImage.h"; path = "ImageShow/UIImage+largeImage.h"; sourceTree = "<group>"; };
+		1CFCD48919CC06830017DAB3 /* UIImage+largeImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIImage+largeImage.m"; path = "ImageShow/UIImage+largeImage.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,7 +99,10 @@
 		1C16CF3119CABBAA00DEB229 = {
 			isa = PBXGroup;
 			children = (
-				1CFCD47D19CBF43E0017DAB3 /* LargeImageView */,
+				1CFCD48619CC06830017DAB3 /* CoverImagerView.h */,
+				1CFCD48719CC06830017DAB3 /* CoverImagerView.m */,
+				1CFCD48819CC06830017DAB3 /* UIImage+largeImage.h */,
+				1CFCD48919CC06830017DAB3 /* UIImage+largeImage.m */,
 				1C16CF6519CABBAA00DEB229 /* ImageShow */,
 				1C16CF3C19CABBAA00DEB229 /* Frameworks */,
 				1C16CF3B19CABBAA00DEB229 /* Products */,
@@ -119,7 +114,6 @@
 			children = (
 				1C16CF3A19CABBAA00DEB229 /* libImageShow.a */,
 				1C16CF5D19CABBAA00DEB229 /* ImageShow.ane */,
-				1C16CF6019CABBAA00DEB229 /* DebugImageShowAIRApp.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -168,18 +162,6 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		1CFCD47D19CBF43E0017DAB3 /* LargeImageView */ = {
-			isa = PBXGroup;
-			children = (
-				1CFCD47E19CBF43E0017DAB3 /* LargeImageView.h */,
-				1CFCD47F19CBF43E0017DAB3 /* LargeImageView.m */,
-				1CFCD48019CBF43E0017DAB3 /* UIImage+largeImage.h */,
-				1CFCD48119CBF43E0017DAB3 /* UIImage+largeImage.m */,
-			);
-			name = LargeImageView;
-			path = ImageShow/LargeImageView;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -187,8 +169,8 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1CFCD48419CBF43E0017DAB3 /* UIImage+largeImage.h in Headers */,
-				1CFCD48219CBF43E0017DAB3 /* LargeImageView.h in Headers */,
+				1CFCD48C19CC06830017DAB3 /* UIImage+largeImage.h in Headers */,
+				1CFCD48A19CC06830017DAB3 /* CoverImagerView.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -228,22 +210,6 @@
 			productReference = 1C16CF5D19CABBAA00DEB229 /* ImageShow.ane */;
 			productType = "com.apple.product-type.library.static";
 		};
-		1C16CF5F19CABBAA00DEB229 /* DebugImageShowAIRApp */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 1C16CF7719CABBAA00DEB229 /* Build configuration list for PBXNativeTarget "DebugImageShowAIRApp" */;
-			buildPhases = (
-				1C16CF5E19CABBAA00DEB229 /* ShellScript */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				1C16CF6419CABBAA00DEB229 /* PBXTargetDependency */,
-			);
-			name = DebugImageShowAIRApp;
-			productName = DebugImageShowAIRApp;
-			productReference = 1C16CF6019CABBAA00DEB229 /* DebugImageShowAIRApp.app */;
-			productType = "com.apple.product-type.application";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -258,6 +224,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = 1C16CF3119CABBAA00DEB229;
 			productRefGroup = 1C16CF3B19CABBAA00DEB229 /* Products */;
@@ -266,7 +233,6 @@
 			targets = (
 				1C16CF3919CABBAA00DEB229 /* ImageShow */,
 				1C16CF5C19CABBAA00DEB229 /* ImageShow.ane */,
-				1C16CF5F19CABBAA00DEB229 /* DebugImageShowAIRApp */,
 			);
 		};
 /* End PBXProject section */
@@ -285,19 +251,6 @@
 			shellPath = /bin/bash;
 			shellScript = "\n\t\t\t\t\t\t\t\tchmod 755 \"$PROJECT_DIR/$PROJECT_NAME/generateANE.sh\"\n\t\t\t\t\t\t\t\t\"$PROJECT_DIR/$PROJECT_NAME/generateANE.sh\"\n\t\t\t\t\t";
 		};
-		1C16CF5E19CABBAA00DEB229 /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/bash;
-			shellScript = "\n\t\t\t\t\t\t\t\tchmod 755 \"$PROJECT_DIR/$PROJECT_NAME/debugIPA.sh\"\n\t\t\t\t\t\t\t\t\"$PROJECT_DIR/$PROJECT_NAME/debugIPA.sh\"\n";
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -305,9 +258,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1CFCD48319CBF43E0017DAB3 /* LargeImageView.m in Sources */,
-				1CFCD48519CBF43E0017DAB3 /* UIImage+largeImage.m in Sources */,
+				1CFCD48D19CC06830017DAB3 /* UIImage+largeImage.m in Sources */,
 				1C16CF6A19CABBAA00DEB229 /* ImageShow.m in Sources */,
+				1CFCD48B19CC06830017DAB3 /* CoverImagerView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -318,11 +271,6 @@
 			isa = PBXTargetDependency;
 			target = 1C16CF3919CABBAA00DEB229 /* ImageShow */;
 			targetProxy = 1C16CF6119CABBAA00DEB229 /* PBXContainerItemProxy */;
-		};
-		1C16CF6419CABBAA00DEB229 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 1C16CF5C19CABBAA00DEB229 /* ImageShow.ane */;
-			targetProxy = 1C16CF6319CABBAA00DEB229 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -409,7 +357,7 @@
 				EXECUTABLE_EXTENSION = ane;
 				EXECUTABLE_PREFIX = "";
 				GCC_VERSION = "";
-				NATIVEEXTENSION_SWC = /Users/darklinden/Documents/ImageShow/swc/ImageShow.swc;
+				NATIVEEXTENSION_SWC = "/Users/darklinden/Documents/ane-ImageShow/swc-proj/bin/ImageShow.swc";
 				PRODUCT_NAME = ImageShow;
 			};
 			name = Debug;
@@ -421,28 +369,8 @@
 				EXECUTABLE_EXTENSION = ane;
 				EXECUTABLE_PREFIX = "";
 				GCC_VERSION = "";
-				NATIVEEXTENSION_SWC = /Users/darklinden/Documents/ImageShow/swc/ImageShow.swc;
+				NATIVEEXTENSION_SWC = "/Users/darklinden/Documents/ane-ImageShow/swc-proj/bin/ImageShow.swc";
 				PRODUCT_NAME = ImageShow;
-			};
-			name = Release;
-		};
-		1C16CF7819CABBAA00DEB229 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				AIR_SDK_PATH = /Users/darklinden/Documents/AIRSDK_Compiler;
-				GCC_VERSION = "";
-				NATIVEEXTENSION_SWC = /;
-				PRODUCT_NAME = DebugImageShowAIRApp;
-			};
-			name = Debug;
-		};
-		1C16CF7919CABBAA00DEB229 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				AIR_SDK_PATH = /Users/darklinden/Documents/AIRSDK_Compiler;
-				GCC_VERSION = "";
-				NATIVEEXTENSION_SWC = /;
-				PRODUCT_NAME = DebugImageShowAIRApp;
 			};
 			name = Release;
 		};
@@ -472,15 +400,6 @@
 			buildConfigurations = (
 				1C16CF7519CABBAA00DEB229 /* Debug */,
 				1C16CF7619CABBAA00DEB229 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		1C16CF7719CABBAA00DEB229 /* Build configuration list for PBXNativeTarget "DebugImageShowAIRApp" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				1C16CF7819CABBAA00DEB229 /* Debug */,
-				1C16CF7919CABBAA00DEB229 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
