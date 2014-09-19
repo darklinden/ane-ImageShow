@@ -62,9 +62,9 @@ package
 			var b: Boolean = cf.callFuncIsSupported();
 			trace(b.toString());
 			
-			var lcImage:File = File.documentsDirectory.resolvePath("./" + "logo.png");
+			var lcImage:File = File.applicationDirectory.resolvePath("./" + "Assets/logo.png");
 			var s: String = lcImage.nativePath;
-			trace(s);
+			
 			if (lcImage.exists) {
 				trace(s);
 				var b1: Boolean = cf.callFuncShow(s, 10, 10, 100, 80);
