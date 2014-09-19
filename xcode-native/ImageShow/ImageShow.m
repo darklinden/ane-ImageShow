@@ -161,9 +161,7 @@ ANE_FUNCTION(isShow)
     
     NSLog(@"path: %@", path);
     
-    UIImage *img = [UIImage imageWithContentsOfFile:path];
-    
-    [CoverImagerView showImage:img fromRect:rect];
+    [CoverImagerView showImageAtPath:path fromRect:rect];
     
 //    UIImageView *img = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 320, 320)];
 //    img.backgroundColor = [UIColor whiteColor];

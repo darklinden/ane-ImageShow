@@ -13,5 +13,6 @@
 @property (assign, nonatomic) CGRect    fromRect;
 
 + (void)showImage:(UIImage *)image fromRect:(CGRect)rect;
++ (void)showImageAtPath:(NSString *)imagePath fromRect:(CGRect)rect;
 
 @end

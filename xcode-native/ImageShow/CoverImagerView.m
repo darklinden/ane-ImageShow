@@ -21,6 +21,36 @@
 {
     UIView *view = [[[[[UIApplication sharedApplication] delegate] window] rootViewController] view];
     CoverImagerView *iv = [[CoverImagerView alloc] initWithFrame:view.bounds];
+    iv.image = image;
+    iv.fromRect = rect;
+    [view addSubview:iv];
+}
+
++ (void)showImageAtPath:(NSString *)imagePath fromRect:(CGRect)rect
+{
+    UIView *view = [[[[[UIApplication sharedApplication] delegate] window] rootViewController] view];
+    CoverImagerView *iv = [[CoverImagerView alloc] initWithFrame:view.bounds];
+    
+    UIImage *img = [UIImage imageWithContentsOfFile:imagePath];
+    
+    CGSize imgSize = CGSizeMake(img.size.width * img.scale, img.size.height * img.scale);
+    CGSize size = CGSizeMake(view.frame.size.width * 2, view.frame.size.height * 2);
+    
+    if (MAX(imgSize.width, imgSize.height) > MAX(size.width, size.height)) {
+        img = [UIImage imageWithPath:imagePath
+                              inRect:CGRectZero
+                                size:&size
+                              errMsg:nil];
+        img = [UIImage imageWithCGImage:img.CGImage scale:2.f orientation:img.imageOrientation];
+    }
+    else {
+        if (img.scale != 2) {
+            img = [UIImage imageWithCGImage:img.CGImage scale:2.f orientation:img.imageOrientation];
+        }
+    }
+    
+    iv.image = img;
+    iv.fromRect = rect;
     [view addSubview:iv];
 }
 
