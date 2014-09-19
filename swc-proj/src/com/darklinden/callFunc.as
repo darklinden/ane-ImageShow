@@ -2,8 +2,6 @@ package com.darklinden
 {
 	import flash.external.ExtensionContext;
 	
-	import flashx.textLayout.formats.Float;
-
 	public class callFunc
 	{
 		private var context:ExtensionContext;
@@ -20,7 +18,7 @@ package com.darklinden
 			return a;
 		}
 		
-		public function callFuncShow(path: String, x: Float, y: Float, w: Float, h: Float): Boolean
+		public function callFuncShow(path: String, x: Number, y: Number, w: Number, h: Number): Boolean
 		{
 			var a: Boolean;
 			a = context.call("isShow", path, x, y, w, h) as Boolean;
